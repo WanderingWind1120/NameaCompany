@@ -24,8 +24,9 @@ public class Solution1 {
         }
         long answer = 0;
         for (int i =0; i <= 24; i++){
+            long numofMutual = 0;
             for (int j = i+1; j <= 25; j++){
-                long numofMutual = 0;
+                
                 for (String ideaA: initials[i]){
                     if (initials[j].contains(ideaA)){
                         numofMutual++;
